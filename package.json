@@ -1,0 +1,15 @@
+{
+  "name": "@jrson83/node-ts-preset",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "fmt": "rome format src --write",
+    "lint": "rome check src"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "rome": "^11.0.0",
+    "typescript": "^4.9.4"
+  }
+}
