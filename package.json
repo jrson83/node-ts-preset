@@ -5,7 +5,9 @@
   "scripts": {
     "fmt": "rome format src --write",
     "lint": "rome check src",
-    "dev": "tsx src/index.ts"
+    "dev": "tsx src/index.ts",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
