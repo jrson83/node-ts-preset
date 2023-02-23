@@ -14,5 +14,6 @@
 	},
 	"[typescript]": {
 		"editor.defaultFormatter": "rome.rome"
-	}
+	},
+	"files.insertFinalNewline": true
 }
