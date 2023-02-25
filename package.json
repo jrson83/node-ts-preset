@@ -2,9 +2,12 @@
   "name": "@jrson83/node-ts-preset",
   "version": "0.1.0",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "fmt": "rome format src --write",
-    "lint": "rome check src",
+    "preinstall": "npx only-allow pnpm",
+    "clean": "rm -rf dist",
+    "fmt": "rome format . --write",
+    "lint": "rome check .",
     "dev": "tsx src/index.ts",
     "test": "vitest",
     "coverage": "vitest run --coverage"
@@ -15,5 +18,12 @@
     "tsx": "^3.12.3",
     "typescript": "^4.9.5",
     "vitest": "^0.28.5"
-  }
+  },
+  "engines": {
+    "node": ">=16.14.0",
+    "npm": "use `pnpm` instead",
+    "pnpm": ">=7.27.0",
+    "yarn": "use `pnpm` instead"
+  },
+  "packageManager": "pnpm@7.27.0"
 }
