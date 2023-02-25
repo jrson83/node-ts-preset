@@ -17,7 +17,11 @@
     "resolveJsonModule": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,
-    "removeComments": true
+    "removeComments": true,
+    "types": [
+      "node",
+      "vitest"
+    ],
   },
   "include": [
     "src/**/*"
