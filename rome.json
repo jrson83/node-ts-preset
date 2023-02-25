@@ -6,7 +6,9 @@
     "indentSize": 2,
     "indentStyle": "space",
     "lineWidth": 80,
-    "ignore": []
+    "ignore": [
+      "dist"
+    ]
   },
   "javascript": {
     "formatter": {
