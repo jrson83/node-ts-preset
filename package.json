@@ -5,7 +5,11 @@
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "reinstall": "pnpm run clean:pnpm && pnpm install",
+    "list": "pnpm recursive list",
+    "list:workspaces": "pnpm m ls --depth -1 --porcelain",
     "clean": "rm -rf dist",
+    "clean:pnpm": "node ./scripts/cleanModules.mjs",
     "fmt": "rome format . --write",
     "lint": "rome check .",
     "dev": "tsx src/index.ts",
