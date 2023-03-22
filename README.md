@@ -7,13 +7,13 @@
 `ptsup` does not respect `internal` when set. The following command does not inline the `react` dep in bundle:
 
 ```bash
-ptsup --entry=src/index.ts --clean ---internal=react
+ptsup --entry=src/index.ts --clean --internal=react
 ```
 
 When providing an empty array `--external=[]` as external, it does inline the dep as expected in the bundle:
 
 ```bash
-ptsup --entry=src/index.ts --external=[] --clean ---internal=react
+ptsup --entry=src/index.ts --external=[] --clean --internal=react
 ```
 
 ### Replicate 
