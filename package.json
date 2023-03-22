@@ -12,22 +12,23 @@
     "clean:pnpm": "node ./scripts/cleanModules.mjs",
     "fmt": "rome format . --write",
     "lint": "rome check .",
-    "dev": "tsx src/index.ts",
-    "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "build": "ptsup --entry=src/index.ts --clean --external=[] --internal=react"
+  },
+  "dependencies": {
+    "react": "18.2.0"
   },
   "devDependencies": {
     "@types/node": "^18.15.5",
+    "@types/react": "^18.0.28",
+    "ptsup": "^0.3.1",
     "rome": "^11.0.0",
-    "tsx": "^3.12.6",
-    "typescript": "^5.0.2",
-    "vitest": "^0.29.7"
+    "typescript": "^5.0.2"
   },
   "engines": {
     "node": ">=16.14.0",
     "npm": "use `pnpm` instead",
-    "pnpm": ">=7.25.0",
+    "pnpm": ">=7.1.0",
     "yarn": "use `pnpm` instead"
   },
-  "packageManager": "pnpm@7.25.0"
+  "packageManager": "pnpm@7.1.0"
 }
