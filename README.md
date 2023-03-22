@@ -117,7 +117,7 @@ Node.js v18.14.0
 
 > If exist, remove `lockfile` and `node_modules` folder before.
 
-1. Clone the repo and install & buiild:
+1. Clone the repo, switch branch, install & build:
 ```bash
 git clone https://github.com/jrson83/node-ts-preset
 cd node-ts-preset
@@ -139,5 +139,4 @@ pnpm build
 
 3. run `pnpm build`.
 
-> The error is not caught:
-
+> It will throw the error.
