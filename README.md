@@ -13,12 +13,12 @@ ptsup --entry=src/index.ts --clean --internal=react
 When providing an empty array `--external=[]` as external, it does inline the dep as expected in the bundle:
 
 ```bash
-ptsup --entry=src/index.ts --external=[] --clean --internal=react
+ptsup --entry=src/index.ts --clean --external=[] --internal=react
 ```
 
 ### Replicate 
 
-1. Clone the repo and install & buiild:
+1. Clone the repo, switch branch, install & build:
 ```bash
 git clone https://github.com/jrson83/node-ts-preset
 cd node-ts-preset
@@ -28,7 +28,7 @@ pnpm install
 pnpm build
 ```
 
-> It builds and inline the `react` dep.
+> It builds and inlines the `react` dep.
 
 2. Remove from `package.json` `build` script:
 
@@ -39,7 +39,6 @@ pnpm build
 3. run `pnpm build`.
 
 > It does not inline the `react` dep.
-
 
 ## Issue 2: when dependencies missing error not caught
 
