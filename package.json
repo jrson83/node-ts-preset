@@ -2,7 +2,6 @@
   "name": "@jrson83/node-ts-preset",
   "version": "0.1.0",
   "license": "MIT",
-  "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "reinstall": "pnpm run clean:pnpm && pnpm install",
@@ -23,12 +22,5 @@
     "ptsup": "^0.3.1",
     "rome": "^11.0.0",
     "typescript": "^5.0.2"
-  },
-  "engines": {
-    "node": ">=16.14.0",
-    "npm": "use `pnpm` instead",
-    "pnpm": ">=7.1.0",
-    "yarn": "use `pnpm` instead"
-  },
-  "packageManager": "pnpm@7.1.0"
+  }
 }

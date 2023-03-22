@@ -20,7 +20,7 @@
     "removeComments": true,
     "types": [
       "node",
-      "vitest"
+      "react"
     ],
   },
   "include": [
