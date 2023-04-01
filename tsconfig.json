@@ -5,11 +5,7 @@
     "declaration": true,
     "target": "ES2020",
     "module": "ES2020",
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ES2020"
-    ],
+    "lib": ["DOM", "DOM.Iterable", "ES2020"],
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "strict": true,
@@ -18,16 +14,8 @@
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,
     "removeComments": true,
-    "types": [
-      "node",
-      "vitest"
-    ],
+    "types": ["node", "vitest"]
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "**/dist/**",
-    "**/node_modules/**"
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["**/dist/**", "**/node_modules/**"]
 }

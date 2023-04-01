@@ -1,19 +1,31 @@
 {
-	"editor.formatOnSave": true,
-	"editor.codeActionsOnSave": {
-		"source.organizeImports.rome": true
-	},
-	"[javascript][javascriptreact][typescript][typescriptreact]": {
-		"editor.defaultFormatter": "rome.rome"
-	},
-	"[json][jsonc][markdown]": {
-		"editor.defaultFormatter": "vscode.json-language-features"
-	},
-	"[css][scss][less]": {
-		"editor.defaultFormatter": "vscode.css-language-features"
-	},
-	"[typescript]": {
-		"editor.defaultFormatter": "rome.rome"
-	},
-	"files.insertFinalNewline": true
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.rome": true
+  },
+  "files.insertFinalNewline": true,
+  "[json]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "rome.rome"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "vscode.php-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "vscode.markdown-language-features"
+  },
+  "[css][scss][less]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  }
 }
