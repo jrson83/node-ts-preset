@@ -32,10 +32,14 @@
     "dev": "tsx src/index.ts",
     "build": "ptsup",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "test:run": "vitest run",
+    "coverage": "vitest run --coverage",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/node": "^18.15.11",
+    "husky": "^8.0.0",
+    "nano-staged": "^0.8.0",
     "ptsup": "^0.3.1",
     "rome": "^12.0.0",
     "tsx": "^3.12.6",
@@ -47,6 +51,10 @@
     "npm": "use `pnpm` instead",
     "pnpm": ">=8.2.0",
     "yarn": "use `pnpm` instead"
+  },
+  "nano-staged": {
+    "*.ts": "rome check --apply-unsafe .",
+    "*": "rome format --write ."
   },
   "packageManager": "pnpm@8.2.0"
 }
